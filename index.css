@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    background-color: #455d7a;
+}
+
+h1{
+    text-align: center;
+    color: #ff894c;
+}
+
+header{
+    background-color: #233142;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul{
+    color:darkgrey ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    gap: 40px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+
+/* ===================MAIN======================== */
+.imagem{
+   display: flex;
+}
+
+.band{
+    max-width: 500px;
+    max-height: 250px;
+    
+}
+
+.ini{
+    font-size: 1.3rem;
+    color: rgb(179, 179, 179);
+}
+
+
+
+
+/* =====================FOOTER===================== */
+footer{
+    background-color: #233142;
+    padding-bottom: 55px;  
+}
+
+.nomes{
+    color: rgb(173, 169, 169);
+    padding-top: 90px;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* 
+=====================GRAFICO IDADE========================= */
+
+#grafico_barras{
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.idade_text{
+    color: white;
+    font-size: 1.4rem;
+    top: 50%;
+    left: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+/* =====================GRAFICO IDADE=========================  */
+
+
+#grafico_linha{
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.economic_text{
+    color: white;
+    font-size: 0.8rem;
+    top: 50%;
+    left: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
