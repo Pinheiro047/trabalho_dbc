@@ -1,27 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
-  <title>Document</title>
+<link rel="stylesheet" href="index.css">
+<title>Gráfico de Pizza</title>
+<header>
+  <h1>Escravidão no Rio Grande do Sul</h1>
+  <nav>
+      <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="escola.html">Escolaridade</a></li>
+          <li><a href="genero.html">Gênero</a></li>
+          <li><a href="raca.html">Raça</a></li>
+          <li><a href="idade.html">idade</a></li>
+          <li><a href="economico.html">Setores econômicos</a></li>
+      </ul>
+  </nav>
+  <br>
+</header>
+<style>
+body {
+background-color: #455d7a;
+}
+#chartContainer {
+width: 900px;
+ height: 400px;
+background-color: transparent;
+}
+
+.canvasjs-chart-credit {
+ display: none;
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Escravidão no Rio Grande do Sul</h1>
-    <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-            <li><a href="escola.html">Escolaridade</a></li>
-            <li><a href="genero.html">Gênero</a></li>
-            <li><a href="raca.html">Raça</a></li>
-            <li><a href="idade.html">idade</a></li>
-            <li><a href="economico.html">Setores econômicos</a></li>
-        </ul>
-    </nav>
-    <br>
-</header>
+  <div id="chartContainer"></div>
 
+  <script>
+    // Dados para o gráfico
+    var dataPoints = [
+      { label: "Homens", y: 85 },
+      { label: "Mulheres", y: 15 }
+    ];
+
+    // Criando o gráfico
+    window.onload = function() {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        backgroundColor: "transparent",
+        title: {
+          text: "Distribuição de Gênero",
+          horizontalAlign: "center",
+          fontColor: "white"
+        },
+        data: [{
+          type: "pie",
+          startAngle: 240,
+          indexLabel: "{label} {y}",
+          indexLabelFontSize: 12,
+          indexLabelFontColor: "white",
+          dataPoints: dataPoints
+        }]
+      });
+
+      chart.render();
+    };
+  </script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<br>
+<p class="idade_text" >85% são homens que foram encontrados nestas condições entre os anos de 2017 e 2022. 15% são mulheres.
+  Homens, que são a maioria em trabalhos que requerem alto nível de esforço físico, e a maior parte em lavouras, se tornam os mais encontrados em condições de trabalho escravo.
+  
+  </p>
 </body>
 </html>
