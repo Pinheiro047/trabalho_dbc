@@ -34,41 +34,41 @@ background-color: transparent;
 </style>
 </head>
 <body>
-  <div id="chartContainer"></div>
+  <div id="chartContainer"></div>
 
-  <script>
-    // Dados para o gráfico
-    var dataPoints = [
-      { label: "Homens", y: 85 },
-      { label: "Mulheres", y: 15 }
-    ];
+  <script>
+    // Dados para o gráfico
+    var dataPoints = [
+      { label: "Homens", y: 85 },
+      { label: "Mulheres", y: 15 }
+    ];
 
-    // Criando o gráfico
-    window.onload = function() {
-      var chart = new CanvasJS.Chart("chartContainer", {
-        animationEnabled: true,
-        backgroundColor: "transparent",
-        title: {
-          text: "Distribuição de Gênero",
-          horizontalAlign: "center",
-          fontColor: "white"
-        },
-        data: [{
-          type: "pie",
-          startAngle: 240,
-          indexLabel: "{label} {y}",
-          indexLabelFontSize: 12,
-          indexLabelFontColor: "white",
-          dataPoints: dataPoints
-        }]
-      });
+    // Criando o gráfico
+    window.onload = function() {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        animationEnabled: true,
+        backgroundColor: "transparent",
+        title: {
+          text: "Distribuição de Gênero",
+          horizontalAlign: "center",
+          fontColor: "white"
+        },
+        data: [{
+          type: "pie",
+          startAngle: 240,
+          indexLabel: "{label} {y}",
+          indexLabelFontSize: 12,
+          indexLabelFontColor: "white",
+          dataPoints: dataPoints
+        }]
+      });
 
-      chart.render();
-    };
-  </script>
-  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      chart.render();
+    };
+  </script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <br>
-<p class="idade_text" >85% são homens que foram encontrados nestas condições entre os anos de 2017 e 2022. 15% são mulheres.
+<p class="idade_text" ><span style= "color: #ff894c;">85%</span> são homens que foram encontrados nestas condições entre os anos de 2017 e 2022. <span style= "color: #ff894c;">15%</span> são mulheres.
   Homens, que são a maioria em trabalhos que requerem alto nível de esforço físico, e a maior parte em lavouras, se tornam os mais encontrados em condições de trabalho escravo.
   
   </p>
